@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | JL Services</title>
+  <meta name="description" content="Contact JL Services for a quote.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="JL Services home">
+      <img src="assets/img/logo.png" alt="JL Services logo">
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="generators.html">Generator Services</a>
+      <a href="remodeling.html">Remodeling</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn orange" href="contact.html">Get Quote</a>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="contact-hero">
+  <div class="contact-container">
+    <h1>Contact</h1>
+    <p class="contact-sub">
+      <b>Fast quotes. Clear next steps.</b> Tell us what you need and we’ll get back to you.<br>
+      Serving <b>Bucks County, PA &amp; surrounding areas</b>.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="card-icon">📞</div>
+        <h2>Request a quote</h2>
+
+        <form class="contact-form" action="mailto:JLServicesCo@yahoo.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" placeholder="(267) 895-4417" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="service">Service Needed</label>
+              <select id="service" name="service" required>
+                <option value="">Select one</option>
+                <option>Generac Generator Installation</option>
+                <option>Transfer Switch / Electrical</option>
+                <option>Generator Service / Troubleshooting</option>
+                <option>Remodeling / Construction</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="details">Project Details</label>
+            <textarea id="details" name="details" placeholder="Generators: address, fuel type (NG/LP), desired size, photos of meter/panel area.
+Remodeling: room(s), timeline, any photos." required></textarea>
+          </div>
+
+          <button class="btn-orange" type="submit">Send Request</button>
+
+          <p class="form-note">
+            This form opens your email app (mailto). For a true web form, use Formspree or your host’s form endpoint.
+          </p>
+        </form>
+      </div>
+
+      <div class="contact-card">
+        <div class="card-icon pin">📍</div>
+        <h2>Direct contact</h2>
+
+        <div class="direct-lines">
+          <div><b>Phone:</b> (267) 895-4417</div>
+          <div><b>Email:</b> JLServicesCo@yahoo.com</div>
+          <div><b>Service Area:</b> Bucks County, PA &amp; surrounding areas</div>
+        </div>
+
+        <div class="quick-btns">
+          <a class="btn-blue" href="generators.html">Generator Services</a>
+          <a class="btn-dark" href="remodeling.html">Remodeling</a>
+        </div>
+
+        <p class="tip">Pro tip: Add a Google Business Profile and embed your map here later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="y"></span> JL Services • Bucks County, PA & surrounding areas</div>
+    <div class="footer-links">
+      <a href="generators.html">Generators</a>
+      <a href="remodeling.html">Remodeling</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
